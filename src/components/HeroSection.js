@@ -191,7 +191,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://isntagram.com/niranjan.ig"
+                    href="http://isntagram.com/niranjan.26"
                     target="_blank"
                     rel="noreferrer"
                   >

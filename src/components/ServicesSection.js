@@ -37,12 +37,12 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<MdCode />}
             title="Web Dev"
-            desc="I also develop the websites. I create high performance website with blazing fast speed."
+            desc="I can develop the websites. I create high performance website with blazing fast speed."
           />
           <ServicesSectionItem
             icon={<MdCode />}
             title="Programming"
-            desc="I also proficient in programming languages like C,C++,Java. "
+            desc="I'm proficient in programming languages like C,C++,Java. "
           />
         </div>
       </div>

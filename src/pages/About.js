@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
@@ -87,11 +86,14 @@ export default function About() {
             </h2>
             <div className="about__info">
               <PText>
+                In High school I was a B plus to B minus student, which was a
+                substandard grade point average. In moving forward I have become
+                the ideal student that I always dreamed of. Looking back at what
+                changed from then and now, it's truly my mindset.
                 <br />
-                <br />I started coding since I was in high school. Coding is
-                also an art for me. I love it and now I have the opportunity to
-                design along with the coding. I find it really interesting and I
-                enjoyed the process a lot.
+                <br />I started coding since I was in Junior College. I love it
+                and now I have the opportunity to design along with the coding.
+                I find it really interesting and I enjoyed the process a lot.
                 <br />
                 <br />
                 My vision is to make the world a better place. Now almost
@@ -100,7 +102,6 @@ export default function About() {
                 place.
               </PText>
             </div>
-            <Button btnText="Download CV" btnLink="#" />
           </div>
           <div className="right">
             <img src={AboutImg} alt="me" />
