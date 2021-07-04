@@ -157,10 +157,8 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              Motivated Web Developer with a passion for creating websites and a
-              Programmer with interest in Server-Side Development is seeking an
-              internship or entry-level role where i can apply my skills to meet
-              client needs.
+              I am web designer and a developer. I love coding and creating new
+              web experiences.
             </PText>
             <Button btnText="see my works" btnLink="/projects" />
           </div>

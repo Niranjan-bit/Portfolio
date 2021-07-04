@@ -81,9 +81,7 @@ export default function About() {
             <p className="about__subheading">
               Hi, I am <span> Niranjan Kangane </span>
             </p>
-            <h2 className="about__heading">
-              A freelance Web developer and Programmer
-            </h2>
+            <h2 className="about__heading">A freelance developer</h2>
             <div className="about__info">
               <PText>
                 In High school I was a B plus to B minus student, which was a
@@ -127,7 +125,7 @@ export default function About() {
           </div>
         </div>
         <div className="about__info__item">
-          <h1 className="about__info__heading">My Skill</h1>
+          <h1 className="about__info__heading">My Skills</h1>
           <AboutInfoItem
             title="FrontEnd"
             items={['HTML', 'CSS', 'JS', 'ReactJS']}

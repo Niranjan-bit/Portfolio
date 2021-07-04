@@ -59,7 +59,7 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Niranjan Kangane</h1>
           <PText>
-            A freelance web developer and programmer from Pune, India. I try to
+            A freelance web designer and developer from Pune, India. I try to
             make websites that have unique designs and also has a good
             performance rate.
           </PText>

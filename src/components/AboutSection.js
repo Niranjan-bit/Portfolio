@@ -82,7 +82,7 @@ export default function AboutSection() {
           <PText>
             <h4>Niranjan Kangane</h4>
             <p>2nd Year Student at PCCOER in Pune University.</p>
-            <p>Student > Developer > Programmer</p>
+            <p>Student > Developer </p>
           </PText>
           <div className="aboutSection__buttons">
             <Button btnLink="/projects" btnText="Works" />
