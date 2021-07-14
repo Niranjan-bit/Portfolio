@@ -30,6 +30,8 @@ const AboutSectionStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .container {
       text-align: center;
+      margin-top: 2rem;
+      margin-left: 0;
     }
     .aboutSection__left {
       width: 100%;
