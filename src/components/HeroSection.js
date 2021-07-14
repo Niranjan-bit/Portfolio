@@ -43,7 +43,7 @@ const HeroStyles = styled.div`
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    bottom: 20px;
+    top: 400px;
     width: 50px;
   }
   .hero__scrollDown {
