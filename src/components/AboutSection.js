@@ -18,7 +18,7 @@ const AboutSectionStyles = styled.div`
   }
   .para {
     margin-top: 2rem;
-    margin-left: 0;
+    margin-left: -5rem;
   }
   .aboutSection__buttons {
     display: flex;
@@ -59,7 +59,7 @@ export default function AboutSection() {
       <div className="container">
         <div className="AboutSection__left">
           <SectionTitle
-            subheading="             Let me introduce myself"
+            subheading="Let me introduce myself"
             heading="About Me"
           />
           <PText>
