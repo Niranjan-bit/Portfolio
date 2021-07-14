@@ -3,19 +3,15 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/try2.jpg';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
   .container {
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: left;
-  }
-  .aboutSection__left,
-  .aboutSection__right {
-    flex: 1;
+    margin-top: 2rem;
+    margin-left: 45rem;
   }
   .section-title {
     text-align: left;
@@ -31,25 +27,12 @@ const AboutSectionStyles = styled.div`
     gap: 2rem;
     margin-top: 2rem;
   }
-  @media only screen and (max-width: 950px) {
-    .aboutSection__left {
-      flex: 4;
-    }
-    .aboutSection__right {
-      flex: 3;
-    }
-  }
   @media only screen and (max-width: 768px) {
     .container {
-      flex-direction: column;
-      text-aligh: center;
+      text-align: center;
     }
-    .aboutSection__left,
-    .aboutSection__right {
+    .aboutSection__left {
       width: 100%;
-    }
-    .aboutSection__right {
-      margin-top: 3rem;
     }
     .section-title {
       text-align: center;
@@ -59,7 +42,7 @@ const AboutSectionStyles = styled.div`
       margin-top: 2rem;
     }
     .aboutSection__button {
-      flrx-direction: column;
+      flex-direction: column;
       gap: 0;
       .button-wrapper,
       a {
@@ -76,21 +59,18 @@ export default function AboutSection() {
       <div className="container">
         <div className="AboutSection__left">
           <SectionTitle
-            subheading="Let me introduce myself"
+            subheading="             Let me introduce myself"
             heading="About Me"
           />
           <PText>
-            <h4>Niranjan Kangane</h4>
-            <p>2nd Year Student at PCCOER in Pune University.</p>
+            <h4>I'm Niranjan Kangane,</h4>
+            <p>I'm a 2nd Year Student at PCCOER in Pune University.</p>
             <p>Student > Developer </p>
           </PText>
           <div className="aboutSection__buttons">
             <Button btnLink="/projects" btnText="Works" />
             <Button btnLink="/about" btnText="Read More" outline />
           </div>
-        </div>
-        <div className="aboutSection__right">
-          <img className="aboutImg" src={AboutImg} alt="Img" />
         </div>
       </div>
     </AboutSectionStyles>
