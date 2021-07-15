@@ -54,7 +54,7 @@ const AboutSectionStyles = styled.div`
     .aboutSection__buttons {
       flex-direction: row;
       gap: 1rem;
-      margin-left: 2rem;
+      margin-left: 1rem;
       .button-wrapper,
       a {
         width: 100%;
@@ -80,7 +80,7 @@ export default function AboutSection() {
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Works" btnLink="/projects" />
-            <Button btnText="Read More" btnLink="/about" outline />
+            <Button btnText="More" btnLink="/about" outline />
           </div>
         </div>
       </div>
