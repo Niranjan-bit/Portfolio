@@ -5,7 +5,7 @@ import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
 
 const ServicesItemsStyles = styled.div`
-  padding: 10rem 0;
+  padding: 5rem 0;
   .services__allItems {
     display: flex;
     gap: 10rem;

@@ -6,17 +6,18 @@ import Pb from '../images/pb.png';
 const projects = [
   {
     id: uuidv4(),
-    name: 'Meme Generator',
-    desc: 'A webpage where you can create memes. ',
-    img: '',
-  },
-  {
-    id: uuidv4(),
     name: 'Everything About Movies and Series',
     desc:
       'A website which can give you information about every movie/show you search.',
     img: Mas,
   },
+  {
+    id: uuidv4(),
+    name: 'Meme Generator',
+    desc: 'A webpage where you can create memes. ',
+    img: '',
+  },
+
   {
     id: uuidv4(),
     name: 'Profile/Resume Builder',

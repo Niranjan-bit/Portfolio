@@ -7,18 +7,22 @@ import SectionTitle from './SectionTitle';
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
   .container {
+    display: grid;
     align-items: center;
     justify-content: center;
     text-align: left;
-    margin-top: 2rem;
-    margin-left: 45rem;
+  }
+  .aboutSection__left,
+  .aboutSection__right {
+    flex: 1;
   }
   .section-title {
-    text-align: left;
+    text-align: center;
   }
   .para {
+    text-align: left;
     margin-top: 2rem;
-    margin-left: -5rem;
+    margin-left: 10rem;
   }
   .aboutSection__buttons {
     display: flex;
@@ -26,26 +30,31 @@ const AboutSectionStyles = styled.div`
     justify-content: flex-start;
     gap: 2rem;
     margin-top: 2rem;
+    margin-left: 10rem;
   }
   @media only screen and (max-width: 768px) {
     .container {
+      flex-direction: column;
       text-align: center;
-      margin-top: 2rem;
-      margin-left: 0;
     }
-    .aboutSection__left {
+    .aboutSection__left,
+    .aboutSection__right {
       width: 100%;
+    }
+    .aboutSection__right {
+      margin-top: 3rem;
     }
     .section-title {
       text-align: center;
     }
     .para {
-      margin: 0 auto;
+      margin-left: 3rem;
       margin-top: 2rem;
     }
-    .aboutSection__button {
-      flex-direction: column;
-      gap: 0;
+    .aboutSection__buttons {
+      flex-direction: row;
+      gap: 1rem;
+      margin-left: 2rem;
       .button-wrapper,
       a {
         width: 100%;
@@ -59,19 +68,19 @@ export default function AboutSection() {
   return (
     <AboutSectionStyles>
       <div className="container">
-        <div className="AboutSection__left">
+        <div className="aboutSection__left">
           <SectionTitle
             subheading="Let me introduce myself"
             heading="About Me"
           />
           <PText>
-            <h4>I'm Niranjan Kangane,</h4>
-            <p>I'm a 2nd Year Student at PCCOER in Pune University.</p>
-            <p>Student > Developer </p>
+            <p>Niranjan Kangane</p>
+            <p>2nd Year Student at PCCOER in Pune University.</p>
+            <p> Student > Developer </p>
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnLink="/projects" btnText="Works" />
-            <Button btnLink="/about" btnText="Read More" outline />
+            <Button btnText="Works" btnLink="/projects" />
+            <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>
       </div>
