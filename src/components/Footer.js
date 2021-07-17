@@ -124,7 +124,7 @@ export default function Footer() {
               },
               {
                 title: 'Instagram',
-                path: 'http://isntagram.com/niranjan.26',
+                path: 'http://isntagram.com/niranjan.kangane',
               },
             ]}
           />
