@@ -111,6 +111,7 @@ export default function HeroSection() {
           </h1>
           <div className="hero__info">
             <PText>
+               I am a self-taught Web Developer with a strong eye for innovative design and keen understanding of techniques.
               I am a freelance developer and a web designer. I love coding and
               creating new web experiences.
             </PText>
