@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import HeroImg from '../assets/images/hero.jpg';
-import Button from './Button';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
     height: 100vh;
-    min-height: 800px;
+    min-height: 200px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -16,9 +15,20 @@ const HeroStyles = styled.div`
     justify-content: center;
     position: relative;
   }
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .left {
+    flex: 4;
+  }
+  .right {
+    flex: 5;
+  }
   .hero__heading {
     font-size: 2rem;
-    margin-top: 5rem;
     span {
       display: inline-block;
       width: 100%;
@@ -32,11 +42,8 @@ const HeroStyles = styled.div`
   .hero__img {
     max-width: 450px;
     width: 100%;
-    height: 420px;
+    height: 350px;
     margin: 0 auto;
-  }
-  .hero__info {
-    margin-bottom: -18rem;
   }
   .hero__scrollDown {
     display: flex;
@@ -73,18 +80,19 @@ const HeroStyles = styled.div`
     .hero {
       min-height: 750px;
     }
+    .top-section {
+      flex-direction: column;
+      gap: 5rem;
+    }
     .hero__heading {
       font-size: 1.4rem;
-      margin-bottom: -3rem;
+      text-align: center;
       .hero__name {
         font-size: 4.5rem;
       }
     }
     .hero__img {
       height: 300px;
-    }
-    .hero__info {
-      margin-top: 3rem;
     }
     .hero__scrollDown {
       right: 0;
@@ -102,19 +110,24 @@ export default function HeroSection() {
     <HeroStyles>
       <div className="hero">
         <div className="container">
-          <div className="hero__img">
-            <img src={HeroImg} alt="" />
-          </div>
-          <h1 className="hero__heading">
-            <span>Hello, This is</span>
-            <span className="hero__name">Niranjan</span>
-          </h1>
-          <div className="hero__info">
-            <PText>
-              I am a freelance developer and a web designer. I love coding and
-              creating new web experiences.
-            </PText>
-            <Button btnText="see my works" btnLink="/projects" />
+          <div className="top-section">
+            <div className="left">
+              <div className="hero__img">
+                <img src={HeroImg} alt="" />
+              </div>
+            </div>
+            <div className="right">
+              <h1 className="hero__heading">
+                <span>Hello, This is</span>
+                <span className="hero__name">Niranjan</span>
+              </h1>
+              <div className="hero__info">
+                <PText>
+                  I am a freelance developer and a web designer. I love coding
+                  and creating new web experiences.
+                </PText>
+              </div>
+            </div>
           </div>
           <div className="hero__scrollDown">
             <p>Scroll</p>
