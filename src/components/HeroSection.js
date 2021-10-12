@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.jpg';
+import HeroImg from '../assets/images/hero1.png';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import PText from './PText';
 
@@ -28,7 +28,7 @@ const HeroStyles = styled.div`
     flex: 5;
   }
   .hero__heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     span {
       display: inline-block;
       width: 100%;
@@ -42,7 +42,7 @@ const HeroStyles = styled.div`
   .hero__img {
     max-width: 450px;
     width: 100%;
-    height: 350px;
+    height: 450px;
     margin: 0 auto;
   }
   .hero__scrollDown {

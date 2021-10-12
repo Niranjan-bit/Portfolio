@@ -75,7 +75,7 @@ export default function AboutSection() {
           />
           <PText>
             <p>Niranjan Kangane</p>
-            <p>2nd Year Student at PCCOER in Pune University.</p>
+            <p>3rd Year Student at PCCOER in Pune University.</p>
             <p> Student > Developer </p>
           </PText>
           <div className="aboutSection__buttons">

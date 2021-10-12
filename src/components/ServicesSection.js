@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdDesktopMac, MdCode } from 'react-icons/md';
+import { BsCodeSlash } from 'react-icons/bs';
 import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
@@ -40,7 +41,7 @@ export default function ServicesSection() {
             desc="I can develop the websites. I create high performance website with blazing fast speed."
           />
           <ServicesSectionItem
-            icon={<MdCode />}
+            icon={<BsCodeSlash />}
             title="Programming"
             desc="I'm proficient in programming languages like C,C++,Java. "
           />
