@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
 
-const AboutItemStyles = styled.div`
+const AboutItemStyles1 = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -16,7 +16,7 @@ const AboutItemStyles = styled.div`
     gap: 1.5rem;
     position: absolute;
     left: 18rem;
-    margin-left: 35px;
+    margin-left: 160px;
   }
   .item {
     background-color: var(--deep-dark);
@@ -37,12 +37,12 @@ const AboutItemStyles = styled.div`
   }
 `;
 
-export default function AboutInfoItem({
+export default function AboutInfoItem1({
   title = 'this is title',
   items = ['HTML', 'CSS', 'JS'],
 }) {
   return (
-    <AboutItemStyles>
+    <AboutItemStyles1>
       <h1 className="title">{title}</h1>
       <div className="items">
         {items.map((item, index) => (
@@ -51,6 +51,6 @@ export default function AboutInfoItem({
           </div>
         ))}
       </div>
-    </AboutItemStyles>
+    </AboutItemStyles1>
   );
 }

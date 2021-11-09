@@ -4,6 +4,7 @@ import PText from '../components/PText';
 import AboutImg from '../assets/images/about-page-img.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
+import AboutInfoItem1 from '../components/AboutInfoItem1';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -26,7 +27,7 @@ const AboutPageStyles = styled.div`
     span {
       background-color: var(--deep-dark);
       padding: 0.5rem;
-      boe=rder-radius: 8px;
+      border-radius: 8px;
     }
   }
   .about__heading {
@@ -136,9 +137,17 @@ export default function About() {
         </div>
         <div className="about__info__item">
           <h1 className="about__info__heading">Experience</h1>
-          <AboutInfoItem
+          <AboutInfoItem1
             title=" May - July 2021   "
             items={['Internship - FrontEnd Developer at HC Roots']}
+          />
+          <AboutInfoItem1
+            title=" August - September 2021   "
+            items={['Internship - ReactJS Developer at ProInsights']}
+          />
+          <AboutInfoItem1
+            title=" September 2021 -  Running   "
+            items={['FrontEnd Team - Google Developer Student Club']}
           />
         </div>
       </div>
