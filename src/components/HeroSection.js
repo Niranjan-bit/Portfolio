@@ -6,7 +6,7 @@ import PText from './PText';
 
 const HeroStyles = styled.div`
   .hero {
-    height: 100vh;
+    height: 101vh;
     min-height: 200px;
     width: 100%;
     text-align: center;
