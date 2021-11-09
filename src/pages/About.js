@@ -26,7 +26,7 @@ const AboutPageStyles = styled.div`
     margin-bottom: 2rem;
     span {
       background-color: var(--deep-dark);
-      padding: 0.6rem;
+      padding: 0.5rem;
       border-radius: 8px;
     }
   }

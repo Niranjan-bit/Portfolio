@@ -29,7 +29,7 @@ const AboutItemStyles1 = styled.div`
     gap: 1rem;
     .items {
       position: initial;
-      gap: 1.1rem;
+      gap: 1rem;
       margin-left: 40px;
     }
     .title {
