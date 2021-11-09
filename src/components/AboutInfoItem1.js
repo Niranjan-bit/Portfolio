@@ -30,6 +30,7 @@ const AboutItemStyles1 = styled.div`
     .items {
       position: initial;
       gap: 1rem;
+      margin-left: 40px;
     }
     .title {
       font-size: 2rem;
