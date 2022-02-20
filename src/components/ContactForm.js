@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import emailjs from 'emailjs-com';
 import styled from 'styled-components';
 
 const FormStyle = styled.form`
@@ -39,51 +40,56 @@ const FormStyle = styled.form`
   }
 `;
 
-export default function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+const Mailer = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_3pywihb',
+        'template_32z8aj4',
+        e.target,
+        'user_5BzKNj51HJt8ohOcCljy4'
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }
   return (
-    <>
-      <FormStyle>
-        <div className="form-group">
-          <label htmlFor="name">
-            Your Name
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">
-            Your Email
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">
-            Your message
-            <textarea
-              type="text"
-              id="message"
-              name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </label>
-        </div>
-        <button type="submit">Send</button>
-      </FormStyle>
-    </>
+    <FormStyle>
+      <form onSubmit={sendEmail} className="row">
+        <h1>Name</h1>
+        <input
+          type="text"
+          name="name"
+          id="new-todo-input"
+          className="form-control"
+          style={{ fontSize: '20px' }}
+        />
+        <h1>Email</h1>
+        <input
+          type="email"
+          name="user_email"
+          className="form-control"
+          style={{ fontSize: '20px' }}
+        />
+        <h1>Message</h1>
+        <textarea
+          name="message"
+          rows="4"
+          className="form-control"
+          style={{ fontSize: '20px' }}
+        />
+        <input
+          type="submit"
+          value="Send"
+          className="form-control btn btn-primary"
+          style={{ marginTop: '30px', fontSize: '25px' }}
+        />
+      </form>
+    </FormStyle>
   );
-}
+};
+
+export default Mailer;

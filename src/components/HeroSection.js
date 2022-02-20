@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import HeroImg from '../assets/images/hero1.png';
-import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
+/** import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';* */
 import PText from './PText';
 
 const HeroStyles = styled.div`
@@ -118,20 +118,13 @@ export default function HeroSection() {
             </div>
             <div className="right">
               <h1 className="hero__heading">
-                <span>Hello, This is</span>
+                <span>Hello, I'm</span>
                 <span className="hero__name">Niranjan</span>
               </h1>
               <div className="hero__info">
-                <PText>
-                  I am a freelance developer and a web designer. I love coding
-                  and creating new web experiences.
-                </PText>
+                <PText>[MERN Stack Developer & Software Developer]</PText>
               </div>
             </div>
-          </div>
-          <div className="hero__scrollDown">
-            <p>Scroll</p>
-            <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
           </div>
         </div>
       </div>
