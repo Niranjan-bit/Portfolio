@@ -43,7 +43,7 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<BsCodeSlash />}
             title="Programming"
-            desc="I'm proficient in programming languages like C,C++,Java. "
+            desc="I'm proficient in programming languages like Java,JavaScript. "
           />
         </div>
       </div>

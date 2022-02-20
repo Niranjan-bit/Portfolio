@@ -6,7 +6,7 @@ const AboutItemStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   position: relative;
   .title {
     font-size: 2.4rem;
@@ -15,7 +15,7 @@ const AboutItemStyles = styled.div`
     display: flex;
     gap: 1.5rem;
     position: absolute;
-    left: 18rem;
+    left: 30rem;
     margin-left: 35px;
   }
   .item {

@@ -115,12 +115,12 @@ export default function About() {
             />
             <AboutInfoItem
               title="College"
-              items={['Modern College of Arts, Commerce and Science, Pune']}
+              items={['Modern College of Arts, Commerce & Science, Pune']}
             />
             <AboutInfoItem
               title="U.G Programme"
               items={[
-                'Pimpri Chinchwad College of Engineering and Research, Pune',
+                'Pimpri Chinchwad College of Engineering & Research, Pune',
               ]}
             />
           </div>
@@ -128,11 +128,15 @@ export default function About() {
         <div className="about__info__item">
           <h1 className="about__info__heading">My Skills</h1>
           <AboutInfoItem
-            title="FrontEnd"
-            items={['HTML', 'CSS', 'JS', 'ReactJS']}
+            title="Programming Language"
+            items={['Java', 'JavaScript']}
           />
-          <AboutInfoItem title="Backend" items={['Node']} />
-          <AboutInfoItem title="Programming" items={['C', 'C++', 'Java']} />
+          <AboutInfoItem
+            title="Web Framework"
+            items={['ReactJS', 'SpringBoot']}
+          />
+          <AboutInfoItem title="Backend" items={['NodeJS']} />
+          <AboutInfoItem title="Database" items={['MySQL', 'MongoDB']} />
           <AboutInfoItem title="Design" items={['Figma']} />
         </div>
         <div className="about__info__item">
