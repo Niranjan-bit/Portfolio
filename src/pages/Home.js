@@ -13,6 +13,7 @@ export default function Home() {
       <ServicesSection />
       <ProjectSection />
       <ContactBanner />
+    
     </div>
   );
 }
